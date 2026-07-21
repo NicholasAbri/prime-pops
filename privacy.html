@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  try {
+    if (localStorage.getItem('primepops-theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  } catch (error) {}
+</script>
+<meta name="theme-color" content="#EA580C">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🍿&lt;/text&gt;&lt;/svg&gt;">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="https://unpkg.com/lucide@0.468.0"></script>
+<title>Privacy Policy | PRIME POPS</title>
+<meta
+  name="description"
+  content="Learn what information PRIME POPS collects, how it is used for preorders and delivery, and how customer information is handled."
+>
+</head>
+<body class="legal-page">
+<!-- Legal-page header -->
+<header class="legal-header">
+  <div class="legal-header-inner">
+    <a aria-label="PRIME POPS home" class="flex flex-col items-center group select-none text-brand-cocoa dark:text-white transition-colors duration-300" href="./index.html">
+      <div class="flex items-center justify-center text-brand-orange group-hover:scale-105 transition-transform duration-300">
+        <i class="w-7 h-7" data-lucide="popcorn"></i>
+      </div>
+      <span class="text-base font-extrabold tracking-[0.2em] leading-none mt-1">PRIME</span>
+      <span class="text-[9px] font-bold tracking-[0.35em] leading-none mt-0.5">-POPS-</span>
+    </a>
+
+    <div class="legal-header-actions">
+      <button
+        class="w-11 h-11 rounded-xl bg-brand-orange hover:bg-brand-orangeHover text-white flex items-center justify-center transition-all duration-300 shadow-lg shadow-orange-500/15"
+        id="legal-theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        aria-pressed="false"
+      >
+        <i class="w-5 h-5 theme-icon" data-lucide="moon"></i>
+      </button>
+      <a class="legal-back-link" href="./index.html" id="legal-back-home">Back to Home</a>
+    </div>
+  </div>
+</header>
+
+<!-- Privacy Policy content -->
+<main class="legal-main">
+  <header class="legal-intro">
+    <span class="legal-eyebrow">PRIME POPS</span>
+    <h1 class="legal-title">Privacy Policy</h1>
+    <p class="legal-lead">
+      We keep customer information simple, limited and focused on completing
+      your order.
+    </p>
+  </header>
+
+  <div class="legal-content">
+    <section class="legal-section" aria-labelledby="privacy-collect">
+      <h2 id="privacy-collect">Information We Collect</h2>
+      <ul>
+        <li>Name</li>
+        <li>Phone number</li>
+        <li>Delivery address</li>
+        <li>Order details</li>
+      </ul>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-use">
+      <h2 id="privacy-use">How We Use It</h2>
+      <p>We only use customer information to:</p>
+      <ul>
+        <li>Process preorders</li>
+        <li>Communicate through WhatsApp</li>
+        <li>Arrange payment or delivery</li>
+        <li>Improve customer service</li>
+      </ul>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-sharing">
+      <h2 id="privacy-sharing">Data Sharing</h2>
+      <p>
+        We do not sell customer information. Information is only shared where
+        necessary to complete an order.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-security">
+      <h2 id="privacy-security">Security</h2>
+      <p>Customer information is handled responsibly.</p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-contact">
+      <h2 id="privacy-contact">Contact</h2>
+      <p>
+        Customers may contact PRIME POPS with any privacy questions through
+        <a
+          class="legal-contact-link"
+          href="https://wa.me/233530596326?text=Hi%20PRIME%20POPS%2C%20I%20have%20a%20privacy%20question."
+          target="_blank"
+          rel="noopener noreferrer"
+        >WhatsApp</a>.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer class="legal-footer">
+  <nav class="legal-footer-links" aria-label="Legal pages">
+    <a href="./terms.html">Terms &amp; Conditions</a>
+  </nav>
+  <p>© 2026 PRIME POPS. All rights reserved.</p>
+</footer>
+
+<script src="./legal.js"></script>
+</body>
+</html>

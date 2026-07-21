@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" data-build="production" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Apply the saved theme before the page renders to prevent a light-mode flash -->
+<script>
+  try {
+    if (localStorage.getItem('primepops-theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  } catch (error) {}
+</script>
+<title>PRIME POPS | Premium Handcrafted Popcorn in Ghana</title>
+<meta content="PRIME POPS offers freshly made-to-order premium popcorn for movie nights, study sessions, birthdays, events, campus deliveries, and everyday cravings. Pre-order easily on WhatsApp." name="description"/>
+<meta content="PRIME POPS, premium popcorn Ghana, preorder popcorn, made to order popcorn, handcrafted popcorn, popcorn delivery, birthday popcorn packs, campus delivery, WhatsApp preorder" name="keywords"/>
+<meta content="PRIME POPS" name="author"/>
+<meta content="#EA580C" name="theme-color"/>
+<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🍿&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+<meta content="PRIME POPS | Popped to Perfection" property="og:title"/>
+<meta content="Freshly popped after your order is confirmed—perfect for movie nights, study sessions, hangouts, birthdays, and every craving in between." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" property="og:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;950&amp;display=swap" rel="stylesheet"/>
+<script defer="" src="https://unpkg.com/lucide@0.468.0"></script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "PRIME POPS",
+    "description": "Freshly made-to-order premium popcorn for movie nights, study sessions, birthdays, events, and everyday cravings.",
+    "servesCuisine": "Snacks",
+    "priceRange": "GH₵10+",
+    "telephone": "+233530596326",
+    "sameAs": [],
+    "makesOffer": [
+      {"@type": "Offer", "name": "Prime Mini", "description": "Available in Classic (Salted) and Milky flavors.", "price": "15", "priceCurrency": "GHS", "availability": "https://schema.org/InStock"},
+      {"@type": "Offer", "name": "Prime Plus", "description": "Available in Classic (Salted), Milky, and Chocolate flavors.", "price": "20", "priceCurrency": "GHS", "availability": "https://schema.org/InStock"},
+      {"@type": "Offer", "name": "Prime Deluxe", "description": "Available in Classic (Salted), Milky, and Chocolate flavors.", "price": "30", "priceCurrency": "GHS", "availability": "https://schema.org/InStock"}
+    ]
+  }
+  </script>
+<link href="./styles.css" rel="stylesheet"/><!-- Place real optimized WebP/JPG photos inside ./images using the filenames referenced below. --></head>
+<body class="bg-grid-pattern font-sans antialiased text-brand-cocoa dark:text-[#FFF8EF]">
+<!-- Scroll progress indicator -->
+<div id="scroll-progress"></div>
+<!-- Main navigation -->
+<nav class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-transparent border-b border-transparent" id="navbar">
+<div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+<a aria-label="PRIME POPS home" class="flex flex-col items-center group select-none text-brand-cocoa dark:text-white transition-colors duration-300" href="#home" id="nav-logo">
+<div class="flex items-center justify-center text-brand-orange group-hover:scale-105 transition-transform duration-300">
+<i class="w-7 h-7" data-lucide="popcorn"></i>
+</div>
+<span class="text-base font-extrabold tracking-[0.2em] leading-none mt-1">PRIME</span>
+<span class="text-[9px] font-bold tracking-[0.35em] leading-none mt-0.5">-POPS-</span>
+</a>
+<div class="hidden md:flex items-center gap-10" id="nav-links">
+<a class="nav-link text-xs font-black tracking-widest uppercase text-brand-cocoa dark:text-white hover:text-brand-orange transition-colors duration-200" href="#home">Home</a>
+<a class="nav-link text-xs font-black tracking-widest uppercase text-brand-cocoa dark:text-white hover:text-brand-orange transition-colors duration-200" href="#products">Menu</a>
+<a class="nav-link text-xs font-black tracking-widest uppercase text-brand-cocoa dark:text-white hover:text-brand-orange transition-colors duration-200" href="#bulk-orders">Bulk</a>
+<a class="nav-link text-xs font-black tracking-widest uppercase text-brand-cocoa dark:text-white hover:text-brand-orange transition-colors duration-200" href="#faq">FAQ</a>
+<a class="nav-link text-xs font-black tracking-widest uppercase text-brand-cocoa dark:text-white hover:text-brand-orange transition-colors duration-200" href="#footer">Contact</a>
+</div>
+<div class="hidden md:flex items-center gap-3">
+<button aria-label="Toggle dark mode" class="w-11 h-11 rounded-xl bg-brand-orange hover:bg-brand-orangeHover text-white flex items-center justify-center transition-all duration-300 shadow-lg shadow-orange-500/15" id="theme-toggle-desktop">
+<i class="w-5 h-5 theme-icon" data-lucide="moon"></i>
+</button>
+<a class="premium-button inline-flex items-center justify-center bg-brand-orange hover:bg-brand-orangeHover text-white text-[11px] font-black tracking-widest uppercase px-5 py-3 rounded-xl shadow-lg shadow-orange-500/10 select-none startup-primary-button" href="#products">Pre-Order Now</a>
+</div>
+<div class="flex items-center gap-3 md:hidden">
+<button aria-label="Toggle dark mode" class="w-11 h-11 rounded-xl bg-brand-orange hover:bg-brand-orangeHover text-white flex items-center justify-center transition-all duration-300 shadow-lg shadow-orange-500/15" id="theme-toggle">
+<i class="w-5 h-5 theme-icon" data-lucide="moon"></i>
+</button>
+<button aria-expanded="false" aria-label="Toggle menu" class="hamburger-toggle text-brand-cocoa dark:text-white hover:text-brand-orange focus:outline-none" id="mobile-menu-btn">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+<div aria-hidden="true" class="mobile-menu-panel md:hidden absolute top-20 left-0 right-0 bg-[#FAF7F2]/95 dark:bg-[#120A06]/95 backdrop-blur-lg border-b border-brand-cocoa/10 dark:border-white/10 px-6 flex flex-col gap-6 shadow-xl text-brand-cocoa dark:text-white" id="mobile-menu">
+<a class="mobile-link text-base font-extrabold tracking-wider uppercase hover:text-brand-orange transition-colors" href="#home"><i class="w-5 h-5 shrink-0" data-lucide="home"></i><span>Home</span></a>
+<a class="mobile-link text-base font-extrabold tracking-wider uppercase hover:text-brand-orange transition-colors" href="#products"><i class="w-5 h-5 shrink-0" data-lucide="popcorn"></i><span>Menu</span></a>
+<a class="mobile-link text-base font-extrabold tracking-wider uppercase hover:text-brand-orange transition-colors" href="#bulk-orders"><i class="w-5 h-5 shrink-0" data-lucide="package-check"></i><span>Bulk Preorders</span></a>
+<a class="mobile-link text-base font-extrabold tracking-wider uppercase hover:text-brand-orange transition-colors" href="#faq"><i class="w-5 h-5 shrink-0" data-lucide="circle-help"></i><span>FAQ</span></a>
+<a class="mobile-link text-base font-extrabold tracking-wider uppercase hover:text-brand-orange transition-colors" href="#footer"><i class="w-5 h-5 shrink-0" data-lucide="message-circle"></i><span>Contact</span></a>
+<a class="mobile-link w-full text-center bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-black tracking-widest uppercase py-4 rounded-xl transition-all shadow-md" href="#products"><i class="w-5 h-5 shrink-0" data-lucide="shopping-bag"></i><span>Pre-Order Now</span></a>
+</div>
+</nav>
+<!-- Main website content -->
+<main id="main-content">
+<!-- Hero section -->
+<section class="min-h-screen flex items-center justify-center pt-28 pb-16 px-6 relative overflow-hidden" id="home">
+<div class="absolute inset-0 pointer-events-none overflow-hidden -z-10">
+<div class="absolute -top-[280px] left-[5%] w-[700px] h-[700px] bg-brand-orange/10 rounded-full blur-[150px] animate-pulse-soft mobile-soft-blur"></div>
+<div class="absolute top-[250px] right-[2%] w-[520px] h-[520px] bg-amber-500/10 rounded-full blur-[130px] animate-pulse-soft mobile-soft-blur"></div>
+</div>
+<div class="max-w-6xl mx-auto w-full grid lg:grid-cols-12 gap-14 lg:gap-8 items-center relative z-10">
+<div class="lg:col-span-6 text-center lg:text-left flex flex-col items-center lg:items-start reveal-left">
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-[#FDF2E9] dark:bg-brand-orange/10 border border-orange-200/80 dark:border-orange-400/20 rounded-full text-xs font-extrabold text-brand-orange tracking-wider uppercase mb-6 shadow-sm">
+<i class="w-3.5 h-3.5 fill-brand-orange text-brand-orange" data-lucide="star"></i>Freshly Popped for Every Preorder</div>
+<h1 class="text-5xl sm:text-6xl md:text-[5.25rem] font-black text-brand-cocoa dark:text-white tracking-tight leading-[1.05] mb-6">FRESHLY POPPED.<br/><span class="text-brand-orange">MADE FOR YOUR MOMENT.</span></h1>
+<h2 class="text-xl sm:text-2xl font-extrabold text-brand-cocoaLight dark:text-orange-50 leading-snug mb-4">Premium popcorn, prepared only after you order.</h2>
+<p class="text-brand-gray dark:text-orange-100/75 text-base md:text-lg max-w-xl mb-8 leading-relaxed font-medium">Warm, crisp and packed with flavor—made fresh for movie nights, study breaks, celebrations and everyday cravings.</p>
+<div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mb-10">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-white/70 dark:bg-white/10 hover:bg-white dark:hover:bg-white/15 text-brand-cocoa dark:text-white font-extrabold rounded-xl tracking-wider uppercase border border-brand-cocoa/10 dark:border-white/10 transition-all duration-300" href="#order-process">
+              See How It Works
+            </a>
+<a class="premium-button inline-flex items-center justify-center px-8 py-4 bg-brand-orange hover:bg-brand-orangeHover text-white font-extrabold rounded-xl tracking-wider uppercase shadow-xl shadow-orange-500/25 startup-primary-button" href="#products">
+              ORDER NOW 
+            </a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-xl">
+<div class="glass-card rounded-2xl px-4 py-3 text-left"><div class="text-xl">🍿</div><p class="text-[11px] font-black uppercase tracking-wide mt-1">Fresh Daily</p></div>
+<div class="glass-card rounded-2xl px-4 py-3 text-left"><div class="text-xl">🚚</div><p class="text-[11px] font-black uppercase tracking-wide mt-1">Fast Delivery</p></div>
+<div class="glass-card rounded-2xl px-4 py-3 text-left"><div class="text-xl">⭐</div><p class="text-[11px] font-black uppercase tracking-wide mt-1">Student Loved</p></div>
+<div class="glass-card rounded-2xl px-4 py-3 text-left"><div class="text-xl">💬</div><p class="text-[11px] font-black uppercase tracking-wide mt-1">Easy Preordering</p></div>
+</div>
+</div>
+<div class="lg:col-span-6 flex justify-center items-center relative reveal-right">
+<span class="absolute top-8 left-8 text-3xl animate-popcorn-float select-none">🍿</span>
+<span class="absolute bottom-12 left-0 text-2xl animate-float-delayed select-none">🍿</span>
+<span class="absolute top-20 right-0 text-2xl animate-float-slow select-none">🍿</span>
+<div class="absolute w-80 h-80 rounded-full bg-brand-orange/20 blur-[80px] pointer-events-none -z-10 animate-pulse-soft mobile-soft-blur"></div>
+<div class="w-full max-w-md glass-card rounded-[2rem] p-4 md:p-5 shadow-2xl relative border border-brand-orange/15 overflow-hidden animate-float-slow">
+<div class="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/30 dark:to-white/5 pointer-events-none"></div>
+<div class="relative rounded-[1.5rem] overflow-hidden bg-brand-creamDark dark:bg-brand-deepSoft aspect-[4/5]">
+<!-- Replace ./images/hero-popcorn.webp with your real optimized photo. Recommended WebP. --><img alt="Your real hero popcorn photo" class="w-full h-full object-cover product-img photo-slot-image" decoding="async" height="1125" loading="eager" onerror="this.hidden=true; this.nextElementSibling.hidden=false;" src="./images/hero-popcorn.webp" width="900"/><div class="photo-slot-marker" hidden=""><i class="w-7 h-7" data-lucide="image-plus"></i><span>Add your best close-up popcorn photo here</span></div>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-cocoa/45 via-transparent to-transparent"></div>
+<div class="absolute left-4 bottom-4 right-4 glass-card rounded-2xl p-4 text-left">
+<p class="text-xs font-black tracking-widest uppercase text-brand-orange mb-1">Freshly packed</p>
+<p class="text-sm font-bold text-brand-cocoa dark:text-white">Made in small batches for the best crunch.</p>
+</div>
+</div>
+</div>
+<div class="absolute -top-4 -left-2 glass-card rounded-2xl p-4 shadow-lg hidden sm:flex items-center gap-3 animate-float-delayed">
+<i class="w-5 h-5 text-brand-orange" data-lucide="sparkles"></i><span class="text-xs font-black uppercase tracking-wider">Fresh Daily</span>
+</div>
+<div class="absolute top-12 -right-2 glass-card rounded-2xl p-4 shadow-lg hidden sm:flex items-center gap-3 animate-float-slow">
+<i class="w-5 h-5 text-brand-orange" data-lucide="badge-cent"></i><span class="text-xs font-black uppercase tracking-wider">From GH₵10</span>
+</div>
+<div class="absolute -bottom-5 right-8 glass-card rounded-2xl p-4 shadow-lg hidden sm:flex items-center gap-3 animate-float-delayed">
+<i class="w-5 h-5 text-brand-orange" data-lucide="shield-check"></i><span class="text-xs font-black uppercase tracking-wider">Premium Quality</span>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Key service highlights -->
+<section class="py-8 px-6 border-y border-brand-cocoa/5 dark:border-white/10 section-white reveal">
+<div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+<div class="p-4"><i class="w-6 h-6 text-brand-orange mx-auto mb-2" data-lucide="popcorn"></i><p class="font-extrabold text-sm">Freshly Made to Order</p></div>
+<div class="p-4"><i class="w-6 h-6 text-brand-orange mx-auto mb-2" data-lucide="truck"></i><p class="font-extrabold text-sm">Scheduled Delivery</p></div>
+<div class="p-4"><i class="w-6 h-6 text-brand-orange mx-auto mb-2" data-lucide="star"></i><p class="font-extrabold text-sm">Loved by Students</p></div>
+<div class="p-4"><i class="w-6 h-6 text-brand-orange mx-auto mb-2" data-lucide="message-circle"></i><p class="font-extrabold text-sm">Easy WhatsApp Preorders</p></div>
+</div>
+</section>
+
+
+<!-- Product menu and flavor selection -->
+<section class="py-28 section-white border-b border-brand-cocoa/5 dark:border-white/10 relative overflow-hidden" id="products">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-brand-orange/5 dark:bg-brand-orange/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-6xl mx-auto px-6 relative z-10">
+<div class="text-center max-w-2xl mx-auto mb-16 reveal">
+<span class="text-xs font-bold text-brand-orange tracking-widest uppercase block mb-3">Our Menu</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mb-4">Choose Your Popcorn</h2>
+<p class="text-brand-gray dark:text-orange-100/70 text-base md:text-lg leading-relaxed font-medium">Choose a pack, pick your flavor, and we’ll prepare it fresh for your preorder.</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-7 mb-10 items-stretch">
+<article aria-label="Select Prime Mini pack" class="menu-pack-card glass-card rounded-3xl p-7 transition-all duration-500 reveal startup-product-card" id="pack-mini" onclick="selectPack('mini')" role="button" tabindex="0">
+<div class="product-card-header">
+<div class="product-card-heading">
+<span class="product-card-label">
+<i class="w-3.5 h-3.5" data-lucide="popcorn"></i>
+<span>Quick Snack</span>
+</span>
+<h3 class="product-card-title">PRIME MINI</h3>
+</div>
+<div class="product-card-price">
+<p class="product-card-price-label">Price</p>
+<p class="product-card-price-value">GH₵15</p>
+</div>
+</div>
+<div class="product-card-visual h-36 rounded-3xl bg-gradient-to-br from-orange-100 via-brand-cream to-white dark:from-brand-orange/15 dark:via-white/5 dark:to-brand-deepSoft flex items-center justify-center mb-6 overflow-hidden">
+<div class="text-6xl drop-shadow-xl transition-transform duration-500 hover:scale-110">🍿</div>
+</div>
+<p class="text-brand-gray dark:text-orange-100/70 text-sm leading-relaxed mb-6 font-medium">A neat personal pack for quick cravings and study breaks.</p>
+<div class="space-y-2" id="flavors-mini"></div>
+</article>
+<article aria-label="Select Prime Plus pack" class="menu-pack-card glass-card rounded-3xl p-7 transition-all duration-500 reveal reveal-delay-100 startup-product-card most-popular-card" id="pack-bossu" onclick="selectPack('bossu')" role="button" tabindex="0">
+<div class="product-card-header">
+<div class="product-card-heading">
+<span class="product-card-label product-card-label-popular" aria-label="Most popular product">
+<span aria-hidden="true">⭐</span>
+<span>Most Popular</span>
+</span>
+<h3 class="product-card-title">PRIME PLUS</h3>
+</div>
+<div class="product-card-price">
+<p class="product-card-price-label">Price</p>
+<p class="product-card-price-value">GH₵20</p>
+</div>
+</div>
+<div class="product-card-visual h-36 rounded-3xl bg-gradient-to-br from-amber-100 via-orange-50 to-white dark:from-brand-orange/20 dark:via-white/5 dark:to-brand-deepSoft flex items-center justify-center mb-6 overflow-hidden">
+<div class="text-7xl drop-shadow-xl transition-transform duration-500 hover:scale-110">🍿</div>
+</div>
+<p class="text-brand-gray dark:text-orange-100/70 text-sm leading-relaxed mb-6 font-medium">Our balanced everyday favorite—more popcorn, more enjoyment.</p>
+<div class="space-y-2" id="flavors-bossu"></div>
+</article>
+<article aria-label="Select Prime Deluxe pack" class="menu-pack-card glass-card rounded-3xl p-7 transition-all duration-500 reveal reveal-delay-200 startup-product-card" id="pack-bigman" onclick="selectPack('bigman')" role="button" tabindex="0">
+<div class="product-card-header">
+<div class="product-card-heading">
+<span class="product-card-label">
+<i class="w-3.5 h-3.5" data-lucide="crown"></i>
+<span>Sharing Size</span>
+</span>
+<h3 class="product-card-title">PRIME DELUXE</h3>
+</div>
+<div class="product-card-price">
+<p class="product-card-price-label">Price</p>
+<p class="product-card-price-value">GH₵30</p>
+</div>
+</div>
+<div class="product-card-visual h-36 rounded-3xl bg-gradient-to-br from-orange-200 via-orange-50 to-white dark:from-brand-orange/25 dark:via-white/5 dark:to-brand-deepSoft flex items-center justify-center mb-6 overflow-hidden">
+<div class="text-8xl drop-shadow-xl transition-transform duration-500 hover:scale-110">🍿</div>
+</div>
+<p class="text-brand-gray dark:text-orange-100/70 text-sm leading-relaxed mb-6 font-medium">A generous pack made for sharing, movie nights and celebrations.</p>
+<div class="space-y-2" id="flavors-bigman"></div>
+</article>
+</div>
+<div aria-live="polite" class="menu-summary-card glass-card rounded-[2rem] p-6 md:p-8 shadow-xl checkout-bar" id="menu-checkout">
+<div class="grid lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-5">
+<span class="text-xs font-black text-brand-orange tracking-widest uppercase block mb-2">Ready to order</span>
+<h3 class="text-2xl md:text-3xl font-black tracking-tight mb-3">Proceed to Checkout</h3>
+<p class="text-sm text-brand-gray dark:text-orange-100/70 leading-relaxed">Choose your pack and flavor, then reserve it on WhatsApp. Your popcorn will be freshly made after confirmation.</p>
+<div class="mt-4 rounded-2xl border border-orange-200 dark:border-orange-400/20 bg-orange-50/80 dark:bg-brand-orange/10 p-4">
+<p class="text-xs font-extrabold leading-relaxed text-brand-cocoa dark:text-orange-50"><span class="text-brand-orange">Important:</span> Sending the WhatsApp message does not confirm your order. Your preorder is confirmed only after PRIME POPS replies and payment or delivery arrangements are agreed.</p>
+</div>
+</div>
+<div class="lg:col-span-4 grid grid-cols-2 gap-4">
+<div class="rounded-2xl bg-white/70 dark:bg-white/5 border border-brand-cocoa/5 dark:border-white/10 p-4">
+<p class="text-[10px] font-black tracking-widest text-brand-gray dark:text-orange-100/60 uppercase mb-1">Selected</p>
+<p class="font-extrabold" id="summary-pack">Not selected</p>
+</div>
+<div class="rounded-2xl bg-white/70 dark:bg-white/5 border border-brand-cocoa/5 dark:border-white/10 p-4">
+<p class="text-[10px] font-black tracking-widest text-brand-gray dark:text-orange-100/60 uppercase mb-1">Flavor</p>
+<p class="font-extrabold" id="summary-flavor">Not selected</p>
+</div>
+<div class="rounded-2xl bg-white/70 dark:bg-white/5 border border-brand-cocoa/5 dark:border-white/10 p-4 flex items-center justify-between col-span-2 sm:col-span-1">
+<div>
+<p class="text-[10px] font-black tracking-widest text-brand-gray dark:text-orange-100/60 uppercase mb-1">Quantity</p>
+<p class="font-extrabold" id="summary-qty">Not selected</p>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Decrease checkout quantity" class="w-9 h-9 rounded-xl bg-white dark:bg-white/10 border border-brand-cocoa/10 dark:border-white/10 font-black transition hover:border-brand-orange" onclick="changeMenuQty(-1)">−</button>
+<button aria-label="Increase checkout quantity" class="w-9 h-9 rounded-xl bg-white dark:bg-white/10 border border-brand-cocoa/10 dark:border-white/10 font-black transition hover:border-brand-orange" onclick="changeMenuQty(1)">+</button>
+</div>
+</div>
+<div class="rounded-2xl bg-brand-orange text-white p-4 col-span-2 sm:col-span-1">
+<p class="text-[10px] font-black tracking-widest text-white/75 uppercase mb-1">Total</p>
+<p class="font-black text-2xl" id="summary-total">GH₵0</p>
+</div>
+</div>
+<div class="lg:col-span-3">
+<button class="premium-button w-full py-4 bg-brand-orange hover:bg-brand-orangeHover text-white font-black rounded-2xl flex items-center justify-center gap-2 shadow-xl shadow-orange-500/20 startup-primary-button" onclick="preorderSelectedPack()">
+<i class="w-5 h-5" data-lucide="message-square"></i>
+                Preorder Now
+              </button>
+<button class="back-to-menu-button" onclick="backToMenu()" type="button">
+<i class="w-4 h-4" data-lucide="arrow-left"></i>
+Back to Menu
+</button>
+<p class="flavor-error mt-4 text-center" id="menu-checkout-error">Please choose a pack and flavor before continuing.</p>
+<p class="hidden mt-4 text-center text-xs font-bold text-brand-orange" id="large-order-notice">Orders above 20 packs may require 24–48 hours’ notice.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Why choose PRIME POPS -->
+<section class="py-28 section-alt" id="why">
+<div class="max-w-6xl mx-auto px-6"><div class="text-center max-w-xl mx-auto mb-16 reveal"><span class="text-xs font-bold text-brand-orange tracking-widest uppercase block mb-3">Why Choose PRIME POPS</span><h2 class="text-4xl font-black tracking-tight">Premium feel. Fresh preorder experience.</h2></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="glass-card rounded-3xl p-6 reveal"><i class="w-7 h-7 text-brand-orange mb-5" data-lucide="sparkles"></i><h3 class="font-extrabold mb-2">Fresh Batches</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">Prepared fresh, packed cleanly, and delivered with care.</p></div>
+<div class="glass-card rounded-3xl p-6 reveal reveal-delay-100"><i class="w-7 h-7 text-brand-orange mb-5" data-lucide="package-check"></i><h3 class="font-extrabold mb-2">Neat Packaging</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">A polished snack experience that feels good to receive.</p></div>
+<div class="glass-card rounded-3xl p-6 reveal reveal-delay-200"><i class="w-7 h-7 text-brand-orange mb-5" data-lucide="message-circle"></i><h3 class="font-extrabold mb-2">Easy WhatsApp Preorders</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">No complicated checkout. Just choose, confirm, and reserve your fresh batch.</p></div>
+<div class="glass-card rounded-3xl p-6 reveal reveal-delay-300"><i class="w-7 h-7 text-brand-orange mb-5" data-lucide="calendar-heart"></i><h3 class="font-extrabold mb-2">Event Ready</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">Great for birthdays, movie nights, school events, and meetings.</p></div>
+</div></div>
+</section>
+
+
+<!-- Ordering process -->
+<section class="py-28 section-white" id="order-process">
+<div class="max-w-6xl mx-auto px-6"><div class="text-center max-w-xl mx-auto mb-16 reveal"><span class="text-xs font-bold text-brand-orange tracking-widest uppercase block mb-3">How Pre-Ordering Works</span><h2 class="text-4xl font-black tracking-tight">Freshly prepared in four simple steps</h2></div>
+<div class="grid md:grid-cols-4 gap-6">
+<div class="glass-card rounded-3xl p-6 text-center reveal"><div class="w-14 h-14 mx-auto bg-brand-orange text-white rounded-2xl grid place-items-center font-black mb-5">1</div><h3 class="font-extrabold mb-2">Place your preorder</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">Message us on WhatsApp to reserve your order.</p></div>
+<div class="glass-card rounded-3xl p-6 text-center reveal reveal-delay-100"><div class="w-14 h-14 mx-auto bg-brand-orange text-white rounded-2xl grid place-items-center font-black mb-5">2</div><h3 class="font-extrabold mb-2">Confirm the details</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">Confirm quantity, flavor, delivery location, and preferred delivery time.</p></div>
+<div class="glass-card rounded-3xl p-6 text-center reveal reveal-delay-200"><div class="w-14 h-14 mx-auto bg-brand-orange text-white rounded-2xl grid place-items-center font-black mb-5">3</div><h3 class="font-extrabold mb-2">We prepare it fresh</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">Your popcorn is freshly made before your scheduled time.</p></div>
+<div class="glass-card rounded-3xl p-6 text-center reveal reveal-delay-300"><div class="w-14 h-14 mx-auto bg-brand-orange text-white rounded-2xl grid place-items-center font-black mb-5">4</div><h3 class="font-extrabold mb-2">Receive it packed fresh</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">Receive your freshly packed popcorn at the agreed delivery time.</p></div>
+</div></div>
+</section>
+
+
+<!-- Events and bulk preorders -->
+<section class="py-28 section-alt overflow-hidden" id="bulk-orders">
+<div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+<div class="event-copy reveal-left">
+<span class="text-xs font-bold text-brand-orange tracking-widest uppercase block mb-3">Events &amp; Bulk Preorders</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mb-5">Need popcorn for your next event?</h2>
+<p class="text-brand-gray dark:text-orange-100/70 text-lg leading-relaxed mb-8">From birthdays to church gatherings, school programs, campus hangouts, movie nights, and corporate events, PRIME POPS prepares every order fresh and on schedule.</p>
+<div aria-label="Events we cater for" class="event-card-grid">
+<div class="event-type-card"><i data-lucide="cake-slice"></i><span>Birthday Parties</span></div>
+<div class="event-type-card"><i data-lucide="church"></i><span>Church Events</span></div>
+<div class="event-type-card"><i data-lucide="school"></i><span>School Events</span></div>
+<div class="event-type-card"><i data-lucide="users"></i><span>Campus Events</span></div>
+<div class="event-type-card"><i data-lucide="briefcase-business"></i><span>Corporate Orders</span></div>
+<div class="event-type-card"><i data-lucide="clapperboard"></i><span>Movie Nights</span></div>
+</div>
+<button aria-label="Reserve a bulk popcorn preorder on WhatsApp" class="premium-button startup-primary-button bulk-order-button" onclick="launchBulkWhatsApp()" type="button">
+<i class="w-5 h-5" data-lucide="message-square"></i>
+    Reserve Bulk Order
+  </button>
+</div>
+<div class="reveal-right glass-card rounded-[2rem] overflow-hidden p-4 event-photo-card">
+
+
+<!-- Replace ./images/event-popcorn.webp with your real optimized event popcorn photo. -->
+<div class="photo-slot-frame photo-slot-landscape">
+<img alt="Real PRIME POPS event order" class="photo-slot-image" decoding="async" loading="lazy" onerror="this.hidden=true; this.nextElementSibling.hidden=false;" src="./images/event-popcorn.webp"/>
+<div class="photo-slot-marker" hidden=""><i class="w-7 h-7" data-lucide="image-plus"></i><span>Add a real event or bulk-order photo here</span></div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- About PRIME POPS -->
+<section class="py-28 section-white" id="about">
+<div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+<div class="reveal-left glass-card rounded-[2rem] overflow-hidden p-4 shadow-xl"><!-- Replace ./images/popcorn-preparation.webp with your real optimized photo. Recommended WebP. --><img alt="Your real preparation photo" class="w-full h-[420px] object-cover rounded-[1.5rem] product-img photo-slot-image" decoding="async" height="630" loading="lazy" onerror="this.hidden=true; this.nextElementSibling.hidden=false;" src="./images/popcorn-preparation.webp" width="900"/><div class="photo-slot-marker" hidden=""><i class="w-7 h-7" data-lucide="image-plus"></i><span>Add a real preparation or packaging photo here</span></div></div>
+<div class="reveal-right"><span class="text-xs font-bold text-brand-orange tracking-widest uppercase block mb-3">About PRIME POPS</span><h2 class="text-4xl md:text-5xl font-black tracking-tight mb-5">Made fresh, packed with care.</h2><p class="text-brand-gray dark:text-orange-100/70 text-lg leading-relaxed mb-5">Prime Pops was created with one goal: to make premium popcorn affordable without compromising quality.</p><p class="text-brand-gray dark:text-orange-100/70 text-lg leading-relaxed">Every batch is freshly made after your preorder is confirmed and carefully packed before scheduled delivery, so your popcorn arrives crisp, warm, and ready for the moment.</p></div>
+</div>
+</section>
+
+
+<!-- Customer testimonials
+<section class="py-28 section-alt" id="testimonials">
+<div class="max-w-6xl mx-auto px-6"><div class="text-center max-w-xl mx-auto mb-16 reveal"><span class="text-xs font-bold text-brand-orange tracking-widest uppercase block mb-3">What Our Customers Say</span><h2 class="text-4xl font-black tracking-tight">Reviews coming soon</h2><p class="text-brand-gray dark:text-orange-100/70 mt-4">We’ll add verified customer reviews here as PRIME POPS grows.</p></div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="glass-card rounded-3xl p-8 reveal"><i class="w-8 h-8 text-brand-orange mb-6" data-lucide="message-square-heart"></i><h3 class="font-extrabold mb-2">Customer Review Coming Soon</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">This space is reserved for a real customer review.</p></div>
+<div class="glass-card rounded-3xl p-8 reveal reveal-delay-100"><i class="w-8 h-8 text-brand-orange mb-6" data-lucide="message-square-heart"></i><h3 class="font-extrabold mb-2">Customer Review Coming Soon</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">This space is reserved for a real customer review.</p></div>
+<div class="glass-card rounded-3xl p-8 reveal reveal-delay-200"><i class="w-8 h-8 text-brand-orange mb-6" data-lucide="message-square-heart"></i><h3 class="font-extrabold mb-2">Customer Review Coming Soon</h3><p class="text-sm text-brand-gray dark:text-orange-100/70">This space is reserved for a real customer review.</p></div>
+</div></div>
+</section> -->
+
+
+<!-- Social media gallery
+<section class="py-28 section-white" id="instagram">
+<div class="max-w-6xl mx-auto px-6"><div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal"><div><span class="text-xs font-bold text-brand-orange tracking-widest uppercase block mb-3">Instagram Gallery</span><h2 class="text-4xl font-black tracking-tight">Fresh moments, soon.</h2></div><p class="text-brand-gray dark:text-orange-100/70 max-w-md">Placeholder gallery blocks for product photos, packaging shots, and lifestyle posts.</p></div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square glass-card rounded-3xl grid place-items-center text-brand-orange reveal"><i class="w-8 h-8" data-lucide="instagram"></i></div>
+<div class="aspect-square glass-card rounded-3xl grid place-items-center text-brand-orange reveal reveal-delay-100"><i class="w-8 h-8" data-lucide="camera"></i></div>
+<div class="aspect-square glass-card rounded-3xl grid place-items-center text-brand-orange reveal reveal-delay-200"><i class="w-8 h-8" data-lucide="image"></i></div>
+<div class="aspect-square glass-card rounded-3xl grid place-items-center text-brand-orange reveal reveal-delay-300"><i class="w-8 h-8" data-lucide="plus"></i></div>
+</div></div>
+</section> -->
+
+
+<!-- Delivery, allergy and order information -->
+<section class="py-20 section-white border-y border-brand-cocoa/5 dark:border-white/10" id="order-info">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid md:grid-cols-3 gap-6">
+<div class="glass-card rounded-3xl p-6 reveal">
+<i class="w-7 h-7 text-brand-orange mb-4" data-lucide="map-pin"></i>
+<h3 class="font-extrabold mb-2">Delivery Areas</h3>
+<p class="text-sm text-brand-gray dark:text-orange-100/70">Delivery is available within selected areas in Ghana. Send your location on WhatsApp to confirm availability and the delivery fee before payment.</p>
+</div>
+<div class="glass-card rounded-3xl p-6 reveal reveal-delay-100">
+<i class="w-7 h-7 text-brand-orange mb-4" data-lucide="shield-alert"></i>
+<h3 class="font-extrabold mb-2">Allergy Notice</h3>
+<p class="text-sm text-brand-gray dark:text-orange-100/70">Some flavors may contain milk, dairy, or other allergens. Please tell us about any allergy or dietary concern before placing your order.</p>
+</div>
+<div class="glass-card rounded-3xl p-6 reveal reveal-delay-200">
+<i class="w-7 h-7 text-brand-orange mb-4" data-lucide="badge-check"></i>
+<h3 class="font-extrabold mb-2">Order Confirmation</h3>
+<p class="text-sm text-brand-gray dark:text-orange-100/70">An order is confirmed only after PRIME POPS replies on WhatsApp and confirms payment, delivery fee, date, and time.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Frequently asked questions -->
+<section class="py-28 section-alt" id="faq">
+<div class="max-w-3xl mx-auto px-6"><div class="text-center mb-12 reveal"><span class="text-xs font-bold text-brand-orange tracking-widest uppercase block mb-3">FAQ</span><h2 class="text-4xl font-black tracking-tight">Common questions</h2></div>
+<div class="space-y-4">
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">How do I place an order?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Select your preferred pack, choose your flavor, adjust the quantity, then click the WhatsApp preorder button to send your order.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">When is my popcorn prepared?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Every order is freshly made after your preorder is confirmed to ensure maximum freshness and quality.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">Do you deliver?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Yes. Delivery is available within selected areas. Delivery fees depend on your location.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">Can I preorder for birthdays, church programs, school events, or meetings?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Yes. We accept bulk preorders for birthdays, church programs, schools, offices, movie nights, and other special events.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">What flavors are available?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Available flavors are displayed in the Products section. More flavors will be added over time.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">What payment methods do you accept?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">We currently accept Mobile Money (MoMo). Payment instructions will be shared after your preorder has been confirmed on WhatsApp.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">How much notice should I give for bulk orders?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Please place bulk orders 2–3 days in advance so we can prepare your popcorn fresh and have it ready on schedule.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">Can I change or cancel my order?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Please contact us on WhatsApp as soon as possible. Changes or cancellations may not be possible once preparation has started.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">Do your flavors contain allergens?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Some flavors may contain milk and are prepared in the same environment. If you have allergies or dietary concerns, please let us know before placing your order.</p></details>
+<details class="glass-card rounded-2xl p-6 reveal"><summary class="flex justify-between items-center cursor-pointer font-extrabold">When is my preorder confirmed?<i class="faq-icon w-5 h-5 text-brand-orange" data-lucide="plus"></i></summary><p class="mt-4 text-sm text-brand-gray dark:text-orange-100/70">Your preorder is confirmed only after PRIME POPS replies on WhatsApp and payment or delivery arrangements have been agreed.</p></details>
+</div></div>
+</section>
+</main>
+
+
+<!-- Website footer -->
+<footer class="section-deep text-neutral-400 py-16 border-t border-brand-cocoa/20 dark:border-white/10" id="footer">
+<div class="max-w-6xl mx-auto px-6">
+<div class="footer-grid">
+<div class="footer-brand reveal-left">
+<span class="text-2xl font-extrabold tracking-wider text-white block mb-2">PRIME POPS <span class="text-brand-orange">🍿</span></span>
+<p>Fresh popcorn, prepared to preorder and packed with care.</p>
+</div>
+<div class="footer-detail"><span>WhatsApp</span><a href="https://wa.me/233530596326?text=Hi%20PRIME%20POPS%2C%20I%20need%20help%20or%20would%20like%20to%20make%20an%20enquiry." rel="noopener noreferrer" target="_blank">+233 53 059 6326</a></div>
+<div class="footer-detail"><span>Delivery Area</span><p>Accra</p></div>
+<div class="footer-detail"><span>Business Hours</span><p>9:00am – 8:00pm</p></div>
+</div>
+<!-- Legal links -->
+<nav aria-label="Legal" class="footer-legal-links">
+<a class="legal-page-link" href="./terms.html">Terms &amp; Conditions</a>
+<a class="legal-page-link" href="./privacy.html">Privacy Policy</a>
+</nav>
+<div class="footer-bottom">
+<p>© 2026 PRIME POPS. All rights reserved.</p>
+<p>Made fresh with ❤️ by PRIME POPS</p>
+</div>
+</div>
+</footer>
+<div aria-hidden="true" aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-[100] flex items-center justify-center px-4 opacity-0 pointer-events-none transition-opacity duration-300" id="order-modal" inert="" role="dialog">
+<div class="absolute inset-0 bg-brand-cocoa/45 backdrop-blur-sm" onclick="closeModal()"></div>
+<div class="relative w-full max-w-sm bg-white dark:bg-brand-deepSoft rounded-3xl shadow-2xl border border-brand-cocoa/5 dark:border-white/10 overflow-hidden translate-y-6 transition-transform duration-300" id="modal-card" tabindex="-1">
+<div class="h-1.5 w-full bg-gradient-to-r from-brand-orange to-amber-400"></div><div class="p-7"><div class="flex items-start justify-between mb-6"><div><p class="text-[10px] font-black tracking-widest text-brand-orange uppercase mb-1">WhatsApp Checkout</p><h2 class="text-xl font-black" id="modal-title">Continue Your Preorder on WhatsApp</h2></div><button aria-label="Close modal" class="w-8 h-8 rounded-full bg-neutral-100 dark:bg-white/10 flex items-center justify-center" onclick="closeModal()"><i class="w-4 h-4" data-lucide="x"></i></button></div><div class="bg-[#FAF7F2] dark:bg-white/5 rounded-2xl p-5 mb-6 border border-brand-cocoa/5 dark:border-white/10"><div class="flex items-center justify-between mb-4"><div><span class="text-base font-extrabold" id="modal-product-name">Prime Mini</span><p class="text-xs text-brand-gray dark:text-orange-100/70 font-medium mt-0.5" id="modal-flavor-name">Classic (Salted)</p></div><span class="text-xs font-black text-brand-orange bg-orange-50 dark:bg-brand-orange/10 border border-orange-100 dark:border-orange-400/20 px-2.5 py-1 rounded-full uppercase tracking-wide">PRIME POPS</span></div><div class="flex items-center justify-between py-3 border-t border-brand-cocoa/5 dark:border-white/10 text-sm"><span class="font-semibold text-brand-gray dark:text-orange-100/70">Unit price</span><span class="font-extrabold" id="modal-unit-price">GH₵10</span></div><div class="flex items-center justify-between py-3 border-t border-brand-cocoa/5 dark:border-white/10"><span class="text-sm font-semibold text-brand-gray dark:text-orange-100/70">Quantity</span><div class="flex items-center gap-3"><button aria-label="Decrease preorder quantity" class="w-8 h-8 rounded-lg bg-white dark:bg-white/10 border border-brand-cocoa/10 dark:border-white/10 font-bold" onclick="modalChangeQty(-1)">−</button><span class="w-8 text-center text-sm font-extrabold" id="modal-qty">1</span><button aria-label="Increase preorder quantity" class="w-8 h-8 rounded-lg bg-white dark:bg-white/10 border border-brand-cocoa/10 dark:border-white/10 font-bold" onclick="modalChangeQty(1)">+</button></div></div><div class="flex items-center justify-between py-3 border-t border-brand-cocoa/5 dark:border-white/10"><span class="text-sm font-black uppercase tracking-wide">Total</span><span class="text-lg font-black text-brand-orange" id="modal-total">GH₵10</span></div></div><div class="checkout-next-step">
+<p>Your selected items are ready.</p>
+<p>When WhatsApp opens, you'll only need to complete a few remaining details—your name, preferred delivery date, time and location—before sending your preorder.</p>
+<p>Once you send the message, we'll review your request and confirm everything with you.</p>
+<ul class="checkout-confidence-list" aria-label="Before continuing">
+<li><i data-lucide="check"></i><span>Your order has not been placed yet.</span></li>
+<li><i data-lucide="check"></i><span>You'll review everything one final time in WhatsApp before sending.</span></li>
+<li><i data-lucide="check"></i><span>We'll confirm your preorder after receiving your message.</span></li>
+</ul>
+</div>
+<button aria-label="Continue preorder on WhatsApp" class="premium-button w-full py-4 bg-brand-orange hover:bg-brand-orangeHover text-white font-black rounded-xl flex items-center justify-center gap-2 mb-3 startup-primary-button" id="confirm-order-button" onclick="confirmOrder()"><i class="w-5 h-5" data-lucide="message-square"></i>Continue to WhatsApp</button><button class="w-full py-3.5 bg-neutral-100 dark:bg-white/10 font-bold rounded-xl transition-all duration-200 text-sm" onclick="closeModal()">Go Back</button></div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="whatsapp-return-title" aria-modal="true" class="whatsapp-return-modal fixed inset-0 z-[110] flex items-center justify-center px-4 opacity-0 pointer-events-none transition-opacity duration-300" id="whatsapp-return-modal" inert="" role="dialog">
+<div class="absolute inset-0 bg-brand-cocoa/50 backdrop-blur-sm"></div>
+<div class="relative w-full max-w-md bg-white dark:bg-brand-deepSoft rounded-3xl shadow-2xl border border-brand-cocoa/5 dark:border-white/10 overflow-hidden translate-y-6 scale-[.98] transition-all duration-300" id="whatsapp-return-card" tabindex="-1">
+<div class="h-1.5 w-full bg-gradient-to-r from-brand-orange to-amber-400"></div>
+<div class="p-7">
+<div class="w-14 h-14 rounded-2xl bg-brand-orange/10 text-brand-orange grid place-items-center mb-5">
+<i class="w-7 h-7" data-lucide="message-circle-check"></i>
+</div>
+<p class="text-[10px] font-black tracking-widest text-brand-orange uppercase mb-2">WhatsApp Preorder</p>
+<h2 class="text-2xl font-black tracking-tight mb-3" id="whatsapp-return-title">Did you complete your preorder?</h2>
+<p class="text-sm text-brand-gray dark:text-orange-100/70 leading-relaxed mb-5">Please confirm whether you sent the order on WhatsApp. Your order is only confirmed after PRIME POPS replies with payment and delivery details.</p>
+<div class="rounded-2xl bg-[#FAF7F2] dark:bg-white/5 border border-brand-cocoa/5 dark:border-white/10 p-4 mb-6">
+<p class="text-[10px] font-black tracking-widest text-brand-gray dark:text-orange-100/60 uppercase mb-1">Pending selection</p>
+<p class="font-extrabold" id="whatsapp-return-selection">Your selected order</p>
+</div>
+<button class="premium-button w-full py-4 bg-brand-orange hover:bg-brand-orangeHover text-white font-black rounded-xl flex items-center justify-center gap-2 mb-3 startup-primary-button" onclick="confirmWhatsAppOrderSent()" type="button">
+<i class="w-5 h-5" data-lucide="check-circle-2"></i> Yes, Order Sent
+        </button>
+<button class="w-full py-3.5 bg-neutral-100 dark:bg-white/10 font-bold rounded-xl transition-all duration-200 text-sm" id="whatsapp-return-secondary" onclick="continueWebsiteOrder()" type="button">Return to Website</button>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="success-modal-title" aria-modal="true" class="premium-success-modal" id="premium-success-modal" inert="" role="dialog">
+<div class="premium-success-backdrop"></div>
+<div aria-live="polite" class="premium-processing-stage" id="premium-processing-stage">
+<div class="processing-popcorn" aria-hidden="true">🍿</div>
+<div class="processing-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+<p>Preparing your preorder...</p>
+</div>
+<div aria-hidden="true" class="premium-celebration-stage" id="premium-celebration-stage">
+<span class="celebration-piece celebration-popcorn piece-1">🍿</span>
+<span class="celebration-piece celebration-kernel piece-2">●</span>
+<span class="celebration-piece celebration-sparkle piece-3">✦</span>
+<span class="celebration-piece celebration-popcorn piece-4">🍿</span>
+<span class="celebration-piece celebration-star piece-5">★</span>
+<span class="celebration-piece celebration-kernel piece-6">●</span>
+<span class="celebration-piece celebration-sparkle piece-7">✧</span>
+<span class="celebration-piece celebration-popcorn piece-8">🍿</span>
+<div class="celebration-check"><i data-lucide="check"></i></div>
+</div>
+<div class="premium-success-card" id="premium-success-card" tabindex="-1">
+<div class="success-card-icon"><i data-lucide="badge-check"></i></div>
+<p class="success-card-eyebrow">PRIME POPS PREORDER</p>
+<h2 id="success-modal-title">Order Received!</h2>
+<p class="success-card-thanks">Thank you for choosing PRIME POPS!</p>
+<p class="success-card-copy">We've received your preorder request. We'll contact you on WhatsApp shortly to confirm your preorder, delivery details, and payment.</p>
+<div class="success-card-actions">
+<button class="premium-button success-primary-button" type="button" onclick="returnHomeAfterSuccess()">Return Home</button>
+<button class="success-secondary-button" type="button" onclick="placeAnotherOrder()">Place Another Order</button>
+</div>
+</div>
+</div>
+<div aria-live="assertive" class="fixed top-24 left-1/2 -translate-x-1/2 z-[125] w-[calc(100%-2rem)] max-w-md opacity-0 pointer-events-none -translate-y-4 transition-all duration-500" id="order-error-toast" role="alert">
+<div class="bg-white dark:bg-brand-deepSoft border border-red-200 dark:border-red-500/20 rounded-2xl shadow-2xl p-5 flex items-start gap-4">
+<div class="w-11 h-11 rounded-xl bg-red-100 dark:bg-red-500/15 text-red-600 dark:text-red-400 grid place-items-center flex-shrink-0"><i class="w-6 h-6" data-lucide="circle-alert"></i></div>
+<div><p class="font-black mb-1">WhatsApp could not be opened</p><p class="text-sm text-brand-gray dark:text-orange-100/70">Please try again or use a different browser to open WhatsApp.</p></div>
+</div>
+</div>
+<div aria-hidden="true" aria-live="polite" id="mobile-checkout-float">
+<button aria-label="Proceed to checkout with selected popcorn" id="mobile-checkout-button" onclick="scrollToCheckout()" type="button">
+<span class="flex-1" id="mobile-checkout-selection">
+<span class="block text-[10px] font-black uppercase tracking-[0.16em] text-white/75 mb-1">Your selection</span>
+<span class="block text-sm font-black leading-tight" id="mobile-checkout-pack">Pack size</span>
+<span class="block text-xs font-semibold text-white/85 mt-1" id="mobile-checkout-flavor">Flavor</span>
+</span>
+<span class="shrink-0 inline-flex items-center gap-2 rounded-xl bg-white text-brand-orange px-3.5 py-3 text-xs font-black uppercase tracking-wide">
+        Proceed to Checkout
+        <i class="w-4 h-4" data-lucide="arrow-right"></i>
+</span>
+</button>
+</div>
+<div class="fixed bottom-6 right-6 z-50"><a aria-label="Make an enquiry or get help on WhatsApp" class="flex items-center gap-2 px-5 py-3.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold rounded-full shadow-2xl transition-all duration-300 hover:scale-105 border border-white/20" href="https://wa.me/233530596326?text=Hi%20PRIME%20POPS%2C%20I%20need%20help%20or%20would%20like%20to%20make%20an%20enquiry." rel="noopener noreferrer" target="_blank"><span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span></span><i class="w-5 h-5" data-lucide="message-circle-question"></i><span class="text-sm font-bold tracking-wide hidden sm:inline">Enquiry / Help</span></a></div>
+<!-- Open legal pages in a separate tab on desktop only -->
+<script>
+  document.querySelectorAll('.legal-page-link').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (!window.matchMedia('(min-width: 768px)').matches) return;
+      event.preventDefault();
+      window.open(link.href, '_blank');
+    });
+  });
+</script>
+<script defer="" src="./app.js"></script></body>
+</html>
