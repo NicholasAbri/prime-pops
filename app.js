@@ -51,9 +51,9 @@ const flavorDescriptions = {
     description:
       "Our signature flavor. Sweet, creamy popcorn made with rich milk flavor for a smooth and satisfying treat.",
   },
-  "Cheddar cheese": {
+  "Cheddar Cheese": {
     icon: "🧀",
-    title: "Cheddar cheese",
+    title: "Cheddar Cheese",
     description:
       "A savory favorite with a rich, cheesy crunch that pairs perfectly with every bite.",
   },
@@ -64,17 +64,17 @@ const menuPacks = {
   mini: {
     name: "Prime Mini",
     price: 10,
-    flavors: ["Milky", "Cheddar cheese"],
+    flavors: ["Milky", "Cheddar Cheese"],
   },
   bossu: {
     name: "Prime Plus",
     price: 15,
-    flavors: ["Milky", "Cheddar cheese"],
+    flavors: ["Milky", "Cheddar Cheese"],
   },
   bigman: {
     name: "Prime Deluxe",
     price: 25,
-    flavors: ["Milky", "Cheddar cheese"],
+    flavors: ["Milky", "Cheddar Cheese"],
   },
 };
 
